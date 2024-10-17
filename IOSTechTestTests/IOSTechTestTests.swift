@@ -1,9 +1,6 @@
 //
 //  IOSTechTestTests.swift
-//  IOSTechTestTests
-//
 //  Created by GaliSrikanth on 16/10/24.
-//
 
 import XCTest
 @testable import IOSTechTest
@@ -32,5 +29,4 @@ final class IOSTechTestTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
-
 }

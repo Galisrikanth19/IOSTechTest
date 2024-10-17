@@ -8,6 +8,9 @@ class UsersListViewModel: ObservableObject {
     let recordsCount: Int = 10
     var pageNumber: Int = 1
     
+    //Service
+    let apiService: UsersListUseCase
+    
     //Publishers
     @Published var usersListArray: [UserModel] = [UserModel]()
     @Published var isLoading = false
@@ -20,6 +23,10 @@ class UsersListViewModel: ObservableObject {
             }
         }
     }
+    
+    init(WithApiService apiService: UsersListUseCase) {
+        self.apiService = apiService
+    }
 }
 
 // MARK: - GetUsersList -
@@ -29,9 +36,8 @@ extension UsersListViewModel {
             DispatchQueue.main.async {
                 self.isLoading = true
             }
-            let urlStr = ApiEndPoints.usersList.endPoint + "?results=\(recordsCount)" + "&page=\(pageNumber)"
-            let usersResponseModel: UsersResponseModel = try await ApiManager.shared.request(WithUrlStr: urlStr,
-                                                                                             WithRequestType: .get)
+            let usersResponseModel: UsersResponseModel = try await apiService.getUsersRequest(WithRecords: recordsCount,
+                                                                                              WithPageNum: pageNumber)
             DispatchQueue.main.async {
                 self.isLoading = false
                 self.usersListArray.append(contentsOf: (usersResponseModel.results ?? []))

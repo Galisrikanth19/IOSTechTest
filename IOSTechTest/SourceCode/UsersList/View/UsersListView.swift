@@ -5,7 +5,7 @@
 import SwiftUI
 
 struct UsersListView: View {
-    @StateObject private var viewModel = UsersListViewModel()
+    @StateObject var viewModel: UsersListViewModel
     
     var body: some View {
         ZStack {

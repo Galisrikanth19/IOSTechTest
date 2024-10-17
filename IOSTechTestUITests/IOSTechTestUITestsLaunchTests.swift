@@ -1,9 +1,6 @@
 //
 //  IOSTechTestUITestsLaunchTests.swift
-//  IOSTechTestUITests
-//
 //  Created by GaliSrikanth on 16/10/24.
-//
 
 import XCTest
 

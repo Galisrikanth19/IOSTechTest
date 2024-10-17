@@ -27,6 +27,7 @@
 		119B50AE2CC09DA900467C6B /* UserDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119B50AD2CC09DA900467C6B /* UserDetailsViewModel.swift */; };
 		119B50B12CC0C46200467C6B /* NoDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119B50B02CC0C46200467C6B /* NoDataView.swift */; };
 		119B50B32CC0C82200467C6B /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119B50B22CC0C82200467C6B /* AlertView.swift */; };
+		119B50B62CC0E5BE00467C6B /* UsersListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119B50B52CC0E5BE00467C6B /* UsersListService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		119B50AD2CC09DA900467C6B /* UserDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewModel.swift; sourceTree = "<group>"; };
 		119B50B02CC0C46200467C6B /* NoDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoDataView.swift; sourceTree = "<group>"; };
 		119B50B22CC0C82200467C6B /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		119B50B52CC0E5BE00467C6B /* UsersListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +161,7 @@
 		119B506F2CBF95DE00467C6B /* UsersList */ = {
 			isa = PBXGroup;
 			children = (
+				119B50B42CC0E5A400467C6B /* UseCase */,
 				119B509B2CBFB87A00467C6B /* Model */,
 				119B509E2CBFC64300467C6B /* View */,
 				119B509F2CBFC64A00467C6B /* ViewModel */,
@@ -252,6 +255,14 @@
 				119B50AD2CC09DA900467C6B /* UserDetailsViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		119B50B42CC0E5A400467C6B /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				119B50B52CC0E5BE00467C6B /* UsersListService.swift */,
+			);
+			path = UseCase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -384,6 +395,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				119B50B62CC0E5BE00467C6B /* UsersListService.swift in Sources */,
 				119B50A22CC096B200467C6B /* BackgroundView.swift in Sources */,
 				119B50712CBF97B400467C6B /* UsersListViewModel.swift in Sources */,
 				119B506E2CBF95D200467C6B /* UsersListView.swift in Sources */,

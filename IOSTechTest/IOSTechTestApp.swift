@@ -9,7 +9,7 @@ struct IOSTechTestApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                UsersListView()
+                UsersListView(viewModel: UsersListViewModel(WithApiService: UsersListService()))
             }
         }
     }
