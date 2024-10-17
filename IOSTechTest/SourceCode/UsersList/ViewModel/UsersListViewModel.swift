@@ -31,6 +31,11 @@ class UsersListViewModel: ObservableObject {
 
 // MARK: - GetUsersList -
 extension UsersListViewModel {
+    
+    //This function calls asynchrosly and get Users
+    //Parameters: This takes data from the viewmodel properties like records and pagenumbers
+    //Retuns: Once execution is finished it will either throw the error or the expected decodable model
+    //ErrorHandling: If we receive any kind of error we can customize the control flow based on requirement
     func getUsers() async {
         do {
             DispatchQueue.main.async {
