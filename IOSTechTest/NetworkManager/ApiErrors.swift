@@ -6,6 +6,6 @@ import Foundation
 
 enum ApiErrors: Error {
     case invalidUrl
-    case invalidResponseCode
+    case invalidResponse
     case decodingError
 }

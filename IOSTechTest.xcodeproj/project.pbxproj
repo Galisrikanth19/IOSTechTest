@@ -25,6 +25,8 @@
 		119B50A72CC0984300467C6B /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119B50A62CC0984300467C6B /* AppConstants.swift */; };
 		119B50AB2CC09BB600467C6B /* UserDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119B50AA2CC09BB600467C6B /* UserDetailsView.swift */; };
 		119B50AE2CC09DA900467C6B /* UserDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119B50AD2CC09DA900467C6B /* UserDetailsViewModel.swift */; };
+		119B50B12CC0C46200467C6B /* NoDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119B50B02CC0C46200467C6B /* NoDataView.swift */; };
+		119B50B32CC0C82200467C6B /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119B50B22CC0C82200467C6B /* AlertView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +68,8 @@
 		119B50A62CC0984300467C6B /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		119B50AA2CC09BB600467C6B /* UserDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsView.swift; sourceTree = "<group>"; };
 		119B50AD2CC09DA900467C6B /* UserDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewModel.swift; sourceTree = "<group>"; };
+		119B50B02CC0C46200467C6B /* NoDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoDataView.swift; sourceTree = "<group>"; };
+		119B50B22CC0C82200467C6B /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +206,8 @@
 			children = (
 				119B50A12CC096B200467C6B /* BackgroundView.swift */,
 				119B50A32CC0980B00467C6B /* CustomProgressView.swift */,
+				119B50B02CC0C46200467C6B /* NoDataView.swift */,
+				119B50B22CC0C82200467C6B /* AlertView.swift */,
 			);
 			path = ViewComponents;
 			sourceTree = "<group>";
@@ -381,7 +387,9 @@
 				119B50A22CC096B200467C6B /* BackgroundView.swift in Sources */,
 				119B50712CBF97B400467C6B /* UsersListViewModel.swift in Sources */,
 				119B506E2CBF95D200467C6B /* UsersListView.swift in Sources */,
+				119B50B12CC0C46200467C6B /* NoDataView.swift in Sources */,
 				119B50AE2CC09DA900467C6B /* UserDetailsViewModel.swift in Sources */,
+				119B50B32CC0C82200467C6B /* AlertView.swift in Sources */,
 				119B50A72CC0984300467C6B /* AppConstants.swift in Sources */,
 				119B50962CBFA98000467C6B /* ApiManager.swift in Sources */,
 				119B50442CBF954F00467C6B /* IOSTechTestApp.swift in Sources */,

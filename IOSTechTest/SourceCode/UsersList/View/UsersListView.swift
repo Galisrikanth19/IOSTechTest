@@ -60,6 +60,12 @@ struct UsersListView: View {
             if viewModel.isLoading {
                 CustomProgressView()
             }
+            
+            if (viewModel.errorMsg.isEmpty == false) && (viewModel.usersListArray.isEmpty == true) {
+                NoDataView()
+            } else if (viewModel.errorMsg.isEmpty == false) && (viewModel.usersListArray.isEmpty == false) {
+                AlertView(alertMessage: $viewModel.errorMsg)
+            }
         }
         .navigationTitle(AppConstants.usersListTitle)
     }

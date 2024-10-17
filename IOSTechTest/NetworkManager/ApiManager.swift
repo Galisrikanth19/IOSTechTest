@@ -28,7 +28,7 @@ class ApiManager {
                 throw ApiErrors.decodingError
             }
         } else {
-            throw ApiErrors.invalidResponseCode
+            throw ApiErrors.invalidResponse
         }
     }
 }
